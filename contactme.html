@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .main {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+    }
+    .main .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    * {
+      font-family: "Roboto", sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      /* background-image: url(./img.jpg); */
+      background-image: linear-gradient(
+          45deg,
+          rgba(245, 70, 66, 0.75),
+          rgba(8, 83, 156, 0.75)
+        ),
+        url("./img.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+
+    .contactform {
+      padding-top: 140px;
+      padding: 0 34px;
+    }
+    .contactform form div {
+      padding: 10px 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .contactform h1 {
+      padding: 12px 0;
+    }
+    /* 
+#emailHelp{
+    font-size: 12px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+
+} */
+    .contactform {
+      border-radius: 20px;
+      color: black;
+      background-color: white;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #form-check {
+      flex-direction: row;
+    }
+    #form-check input {
+      width: 24px;
+      margin: 3px 0;
+    }
+    .contactform form div input {
+      width: 26vw;
+      border-radius: 5px;
+      margin: 6px 0 0 0;
+      padding: 3px;
+    }
+    .btn button {
+      border: none;
+      border-radius: 22px;
+      background-color: rgb(0, 191, 255);
+      color: white;
+      font-weight: bold;
+      font-size: 21px;
+      margin: 0 3px;
+      cursor: pointer;
+      height: 5vh;
+      width: 23vh;
+    }
+    .btn:hover {
+      background-color: white;
+      color: black;
+    }
+    
+    .main .contact-info p {
+      color: white;
+    }
+  </style>
+  <body>
+    <div class="main">
+      <div class="contact-info">
+        <h1>Contact Us</h1>
+        <h2><i class="fa-solid fa-location-dot"></i> Address</h2>
+        <p>Adarsh nagar,Bahadurgarh Haryana</p>
+        <h2><i class="fa-solid fa-phone"></i> Phone</h2>
+        <p>9034009693</p>
+        <h2><i class="fa-solid fa-paper-plane"></i> Email</h2>
+        <p>sanjanadixit805@gmail.com</p>
+      </div>
+
+      <div class="contactform">
+        <h1>Get in touch</h1>
+        <form>
+          <div class="mb-3">
+            <label for="clientemail" class="form-label">Name</label>
+            <input
+              type="name"
+              class="form-control"
+              id="clientemail"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="clientemail" class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="clientemail"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="clientemail" class="form-label">Enquiry</label>
+            <input
+              type="enquiry"
+              class="form-control"
+              id="clientemail"
+              aria-describedby="enquiry"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="clientphone" class="form-label">Phone</label>
+            <input type="phone" class="form-control" id="clientphone" />
+          </div>
+          <div class="mb-3" id="form-check">
+            <input type="checkbox" class="form-check-input" id="isclient" />
+            <label class="form-check-label" for="isclient"
+              >I want you to work on a project with me</label
+            >
+          </div>
+          <div class="btn">
+            <button type="button">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-2,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        text-transform: uppercase;
+      }
+
+      li {
+        list-style-type: none;
+        margin: 10px 0;
+        text-align: justify;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Poppins", san-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+        padding: 0 60px;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(153, 153, 226);
+        font-size: 1.04em;
+      }
+      main {
+        padding: 0 60px;
+      }
+      main hr {
+        border: 0;
+        background-color: #9c97f1;
+        height: 1.2px;
+        margin: 60px 84px;
+      }
+      .left {
+        font-size: 1.7rem;
+      }
+
+      .firstSection {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* margin: 130px 0; */
+      }
+      .firstSection > div {
+        width: 40%;
+      }
+
+      .leftSection {
+        width: 40%;
+      }
+      .leftSection .btn {
+        padding: 12px;
+        background-color: #1e2167;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px orange;
+      }
+      .btn:hover {
+        background-color: white;
+        color: black;
+      }
+
+      .leftSection .buttons {
+        padding-left: 20px;
+      }
+      .leftSection {
+        margin: 70px 0;
+        font-size: 3rem;
+      }
+      .rightSection img {
+        width: 80%;
+        margin: 40px 0;
+      }
+      .purple {
+        color: purple;
+      }
+      /* #element{
+        color:blue;
+      } */
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+      .project img{
+        /* height: 300px; */
+        width: 1000px;
+      }
+      .project{
+        display:flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }.box{
+        display: flex;
+
+        flex-direction: column;
+        gap: 20px
+        ;
+      }
+
+      /* .secondSection .box {
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            background-color: white;
+            display: flex;
+        } */
+      /* .secondSection .vertical{
+            height:90px;
+            width: 1px;
+            background-color: white;
+            margin:0 100px;} */
+
+      /*         
+        .image-top{
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        } */
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Sanjana's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contactme.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, I am <span class="purple">Sanjana</span>
+
+          <span id="element"></span>
+          <div class="buttons">
+            <a href="./Sanjana.Resume.pdf">
+              <button class="btn">Download Resume</button></a
+            >
+            <button class="btn">Visit Github</button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="bg.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <h1>Projects</h1>
+        <div class="box">
+          <!--  -->
+          <div class="project1 project">
+            <a href=""><img src="Screenshot (37).png" alt="" /></a>
+            <div class="project-content">
+
+              <h3>Quickdy Project</h3>
+              Quickdy is a fast-paced, dynamic web application designed to
+              streamline online services for users. My responsibilities
+              included: User Interface Development: I contributed to building
+              responsive and visually appealing user interfaces using HTML, CSS,
+              and Bootstrap. This involved creating layouts that were both
+              user-friendly and aligned with the project's branding guidelines.
+              Cross-Browser Compatibility: Ensuring that the application
+              functioned seamlessly across different browsers was a key focus. I
+              performed thorough testing and made necessary adjustments to
+              achieve consistent performance and appearance. Collaboration and
+              Feedback: I collaborated closely with designers and back-end
+              developers to ensure a cohesive development process. Regular
+              feedback sessions helped in refining the design and functionality
+              of the application.
+            </div>
+          </div>
+          <!--  -->
+          <div class="project2 project">
+            <a href="https://github.com/sanjana-2024/Arena"><img src="Screenshot (35).png" alt="" /></a>
+            <div class="project-content">
+              <h3>Dangal Arena Project</h3>
+              Dangal Arena is a platform dedicated to sports and entertainment,
+              providing users with information, schedules, and updates. In this
+              project, I primarily focused on HTML and CSS to create a visually
+              appealing and responsive user interface. My contributions
+              included: Static Page Layouts: I developed the main layout and
+              structure of the website using HTML, ensuring a clean and
+              organized codebase. This involved setting up headers, footers,
+              navigation menus, and content sections. Styling and Design: I
+              applied CSS to style the website, focusing on creating a cohesive
+              and engaging visual theme. This included selecting color schemes,
+              typography, and spacing to enhance readability and aesthetic
+              appeal. Responsive Design: I implemented responsive design
+              techniques using CSS media queries. This ensured that the site was
+              accessible and user-friendly across various devices, including
+              desktops, tablets, and smartphones.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div></div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Frontend Developer", "Frontend Developer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
